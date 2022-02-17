@@ -1,0 +1,9 @@
+cfs-zen-tweaks
+ananicy
+irqbalance
+nohang
+aic94xx-firmware
+wd719x-firmware
+upd72020x-fw
+zramd
+timeshift
