@@ -30,15 +30,15 @@ sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 2/' /etc/pacman.conf
 #Enable multilib
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
 #basestrap
-pacstrap /mnt --needed - < arrch/_base.txt
-pacstrap /mnt --needed - < arrch/_base.txt
-pacstrap /mnt --needed - < arrch/_base.txt
-pacstrap /mnt --needed - < arrch/_base.txt
-pacstrap /mnt --needed - < arrch/_base.txt
+pacstrap /mnt --needed - < persist-arch/_base.txt
+pacstrap /mnt --needed - < persist-arch/_base.txt
+pacstrap /mnt --needed - < persist-arch/_base.txt
+pacstrap /mnt --needed - < persist-arch/_base.txt
+pacstrap /mnt --needed - < persist-arch/_base.txt
 genfstab -U /mnt >> /mnt/etc/fstab
 clear
-echo "zramd=$zramd" >> arrch/install.conf
-echo "boot=$boot" >> arrch/install.conf
-echo "hstname=$hstname" >> arrch/install.conf
-echo "drive=$drive" >> arrch/install.conf
-cp -rf arrch /mnt
+echo "zramd=$zramd" >> persist-arch/install.conf
+echo "boot=$boot" >> persist-arch/install.conf
+echo "hstname=$hstname" >> persist-arch/install.conf
+echo "drive=$drive" >> persist-arch/install.conf
+cp -rf persist-arch /mnt
