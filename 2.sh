@@ -1,5 +1,6 @@
 source /persist-arch/install.conf
 pacman -Syyu
+pacman-key --populate archlinux
 echo "--------------------------------------------------------"
 echo "           Setup Bahasa, lokal, Hostname & Hosts        "
 echo "--------------------------------------------------------"
