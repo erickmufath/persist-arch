@@ -18,15 +18,14 @@ sgdisk -a 2048 -o ${DISK} # new gpt disk 2048 alignment
 sgdisk -n 1::+10M --typecode=1:ef02 --change-name=1:'BIOSBOOT' ${DISK} # partition 1 (BIOS Boot Partition)
 sgdisk -n 2::+250M --typecode=2:ef00 --change-name=2:'EFIBOOT' ${DISK} # partition 2 (UEFI Boot Partition)
 sgdisk -n 3::-0 --typecode=3:8300 --change-name=3:'ROOT' ${DISK} # partition 3 (Root), default start, remaining
-lsblk
-read -p "->] Sudah Sesuai?  = " confir
 
 mkfs.xfs /dev/${drive}3
 mkfs.fat -F32 /dev/${drive}2
 mount /dev/${drive}3 /mnt
 mkdir -p /mnt/boot
 mount /dev/${drive}2 /mnt/boot
-
+lsblk
+read -p "->] Sudah Sesuai?  = " confir
 
 #Add parallel downloading
 #sed -i 's/^#Para/Para/' /etc/pacman.conf
