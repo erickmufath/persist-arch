@@ -36,7 +36,7 @@ pacstrap /mnt --needed - < persist-arch/_base.txt
 pacstrap /mnt --needed - < persist-arch/_base.txt
 pacstrap /mnt --needed - < persist-arch/_base.txt
 genfstab -U /mnt >> /mnt/etc/fstab
-clear
+echo "tmpfs   /tmp         tmpfs   rw,nodev,nosuid,size=2G          0  0" >> /mnt/etc/fstab
 echo "zramd=$zramd" >> persist-arch/install.conf
 echo "boot=$boot" >> persist-arch/install.conf
 echo "hstname=$hstname" >> persist-arch/install.conf
