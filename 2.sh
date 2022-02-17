@@ -56,6 +56,7 @@ cp -rf /persist-arch /home/"${usrname}"
 /usr/bin/runuser -u ${usrname} -- /persist-arch/yay.sh
 /usr/bin/runuser -u ${usrname} -- flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo 32 > /sys/block/sdb/queue/iosched/fifo_batch
+systemctl enable --now NetworkManager
 #grub install
 case $boot in
 1)
