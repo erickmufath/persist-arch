@@ -8,7 +8,6 @@ sudo systemctl enable zramd
 sudo systemctl enable cups
 sudo systemctl enable ntpd
 sudo systemctl enable preload
-sudo systemctl enable plasma
 sudo systemctl enable bluetooth
 read -p "____________LANJUT?" confir
 sudo systemctl enable sddm
