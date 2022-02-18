@@ -130,3 +130,5 @@ nvidia-settings
 amd-ucode
 intel-ucode
 neofetch
+intel-media-driver
+intel-media-sdk
