@@ -57,6 +57,12 @@ cp -rf /persist-arch /home/"${usrname}"
 /usr/bin/runuser -u ${usrname} -- flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo 32 > /sys/block/sdb/queue/iosched/fifo_batch
 systemctl enable --now NetworkManager
+
+# Add DNS cloudflare
+sed -i 's/^nameserver 192.168.1.1/#nameserver 192.168.1.1/' /etc/resolv.conf
+echo "nameserver 1.1.1.1" >> /etc/resolv.conf
+echo "nameserver 1.0.0.1" >> /etc/resolv.conf
+
 #grub install
 case $boot in
 1)
