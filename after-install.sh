@@ -6,6 +6,7 @@ sudo systemctl enable nohang-desktop
 sudo systemctl enable set-cfs-tweaks
 sudo systemctl enable zramd
 sudo systemctl enable cups
+sudo systemctl enable ntpd
 sudo systemctl enable plasma
 sudo systemctl enable bluetooth
 sudo systemctl enable sddm
