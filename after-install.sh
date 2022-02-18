@@ -10,6 +10,7 @@ sudo systemctl enable ntpd
 sudo systemctl enable preload
 sudo systemctl enable plasma
 sudo systemctl enable bluetooth
+read -p "____________LANJUT?" confir
 sudo systemctl enable sddm
 sudo sed -i 's/^# MAX_SIZE/MAX_SIZE/' /etc/default/zramd
 sudo sed -i 's/^8192/${zramd}/' /etc/default/zramd
