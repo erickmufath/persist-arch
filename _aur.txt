@@ -7,3 +7,4 @@ wd719x-firmware
 upd72020x-fw
 zramd
 timeshift
+preload
