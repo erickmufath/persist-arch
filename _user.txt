@@ -4,10 +4,8 @@ dialog
 wpa_supplicant
 mtools
 linux-headers
-xorg
 sddm
 plasma
-kde-applications
 bluez
 bluez-utils
 ttf-caladea
@@ -20,6 +18,8 @@ xdg-utils
 xdg-user-dirs
 exfatprogs
 unzip
+unrar
+libarchive
 ark
 gtk3
 gtk4
@@ -98,16 +98,7 @@ libtheora
 libvpx
 gstreamer
 gst-libav
-pulseaudio
-pulseaudio-alsa
-pulseaudio-bluetooth
-pulseaudio-equalizer
-pulseaudio-jack
-pulseaudio-lirc
-pulseaudio-zeroconf
 lsp-plugins
-pulsemixer
-alsa-utils
 mesa
 lib32-mesa
 xf86-video-amdgpu
