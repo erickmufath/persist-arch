@@ -5,7 +5,11 @@ echo "=] 3. HYBRID [Direkomendasikan Untuk Media External]"
 echo "======================================================="
 read -p ">> Pilih Jenis Boot (1/2/3) : " boot
 read -p "->] Input Nama Komputer Arch Linux (Contoh : pc atau acer) = " hstname
-read -p "->] Input Jumlah ZRAM (Contoh 8192) terhitung satuan Mega Byte = " zramd
+echo "======================================================"
+echo "=] 1. X11 With Pulseaudio"
+echo "=] 2. Wayland With Pipewire"
+echo "======================================================="
+read -p "->] Pilih Display & Audio Driver (1/2) = " display
 echo ""
 echo "======================================================="
 lsblk
@@ -26,7 +30,7 @@ pacstrap /mnt --needed - < persist-arch/_base.txt
 pacstrap /mnt --needed - < persist-arch/_base.txt
 genfstab -U /mnt >> /mnt/etc/fstab
 echo "tmpfs   /tmp         tmpfs   rw,nodev,nosuid,size=4G          0  0" >> /mnt/etc/fstab
-echo "zramd=$zramd" >> persist-arch/install.conf
+echo "display=$display" >> persist-arch/install.conf
 echo "boot=$boot" >> persist-arch/install.conf
 echo "hstname=$hstname" >> persist-arch/install.conf
 echo "drive=$drive" >> persist-arch/install.conf
