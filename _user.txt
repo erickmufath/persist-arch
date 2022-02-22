@@ -59,6 +59,8 @@ firefox
 adapta-gtk-theme
 materia-gtk-theme
 breeze
+breeze-gtk
+breeze-icons
 materia-kde
 dhcpcd
 kdenlive
