@@ -2,13 +2,13 @@ source /persist-arch/install.conf
 ./persist-arch/yay.sh
 case $display in
 1)
-sudo pacman -Sy -y --noconfirm --needed - < persist-arch/_pulseaudio.txt
+sudo pacman -Sy --noconfirm --needed - < persist-arch/_pulseaudio.txt
 ;;
 2)
-yay -Sy -y --noconfirm --needed - < persist-arch/_pipewire.txt
+yay -Sy --noconfirm --needed - < persist-arch/_pipewire.txt
 ;;
 esac
-yay -Sy -y --nocofirm --needed - < /persist-arch/_aur.txt
+yay -Sy --nocofirm --needed - < /persist-arch/_aur.txt
 sudo systemctl enable ananicy
 sudo systemctl enable irqbalance
 sudo systemctl enable nohang-desktop
