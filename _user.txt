@@ -1,6 +1,7 @@
 networkmanager
 network-manager-applet
 dialog
+youtube-dl
 wpa_supplicant
 mtools
 linux-headers
