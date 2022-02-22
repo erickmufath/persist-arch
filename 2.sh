@@ -52,15 +52,6 @@ cp -rf /persist-arch /home/"${usrname}"
 /usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --noconfirm --needed - < persist-arch/_user.txt
 /usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --noconfirm --needed - < persist-arch/_user.txt
 
-case $display in
-1)
-/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --noconfirm --needed - < persist-arch/_pulseaudio.txt
-;;
-2)
-/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --noconfirm --needed - < persist-arch/_pipewire.txt
-;;
-esac
-
 /usr/bin/runuser -u ${usrname} -- flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo 32 > /sys/block/${drive}/queue/iosched/fifo_batch
 systemctl enable --now NetworkManager
