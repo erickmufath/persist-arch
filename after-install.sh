@@ -8,7 +8,7 @@ sudo pacman -Sy -y --noconfirm --needed - < persist-arch/_pulseaudio.txt
 yay -Sy -y --noconfirm --needed - < persist-arch/_pipewire.txt
 ;;
 esac
-yay -Sy --nocofirm --needed - < /persist-arch/_aur.txt
+yay -Sy -y --nocofirm --needed - < /persist-arch/_aur.txt
 sudo systemctl enable ananicy
 sudo systemctl enable irqbalance
 sudo systemctl enable nohang-desktop
