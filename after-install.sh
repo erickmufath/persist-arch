@@ -14,7 +14,7 @@ sudo systemctl enable irqbalance
 sudo systemctl enable nohang-desktop
 sudo systemctl enable set-cfs-tweaks
 sudo systemctl enable zramd
-sudo systemctl enable cpu-autofreq
+sudo systemctl enable auto-cpufreq
 sudo systemctl enable cups
 sudo systemctl enable ntpd
 sudo systemctl enable preload
