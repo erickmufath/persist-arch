@@ -6,6 +6,8 @@ wpa_supplicant
 mtools
 linux-headers
 sddm
+wxgtk2
+hwdetect
 plasma
 bluez
 bluez-utils
