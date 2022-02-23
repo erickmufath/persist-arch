@@ -5,15 +5,16 @@ case $display in
 sudo pacman -Sy --noconfirm --needed - < persist-arch/_pulseaudio.txt
 ;;
 2)
-yay -Sy --noconfirm --needed - < persist-arch/_pipewire.txt
+yay -Sy --needed - < persist-arch/_pipewire.txt
 ;;
 esac
-yay -Sy --nocofirm --needed - < /persist-arch/_aur.txt
+yay -S --needed - < /persist-arch/_aur.txt
 sudo systemctl enable ananicy
 sudo systemctl enable irqbalance
 sudo systemctl enable nohang-desktop
 sudo systemctl enable set-cfs-tweaks
 sudo systemctl enable zramd
+sudo systemctl enable cpu-autofreq
 sudo systemctl enable cups
 sudo systemctl enable ntpd
 sudo systemctl enable preload
