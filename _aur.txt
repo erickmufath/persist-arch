@@ -9,3 +9,13 @@ upd72020x-fw
 zramd
 timeshift
 preload
+dxvk-bin
+vkd3d
+lib32-vkd3d
+directx-headers
+vulkan-headers
+amdvlk
+lib32-amdvlk
+nvidia-dkms
+wxgtk2
+wxgtk3
