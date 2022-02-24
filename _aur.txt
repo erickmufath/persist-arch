@@ -16,6 +16,6 @@ directx-headers
 vulkan-headers
 amdvlk
 lib32-amdvlk
-nvidia-dkms
+bbswitch
 wxgtk2
 wxgtk3
