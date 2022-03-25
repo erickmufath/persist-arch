@@ -18,7 +18,6 @@ gamemode
 bluez
 bluez-utils
 flatpak
-snapd
 ntp
 cups
 xdg-utils
