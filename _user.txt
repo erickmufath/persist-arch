@@ -69,6 +69,8 @@ materia-kde
 kdenlive
 audacity
 system-config-printer
+print-manager
+spectacle
 packagekit-qt5
 wget
 gvfs
