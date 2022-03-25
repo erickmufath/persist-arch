@@ -9,6 +9,7 @@ upd72020x-fw
 zramd
 timeshift
 preload
+sndcpy
 dxvk-bin
 vkd3d
 lib32-vkd3d
