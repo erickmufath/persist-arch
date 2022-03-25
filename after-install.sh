@@ -2,7 +2,7 @@ source /persist-arch/install.conf
 ./persist-arch/yay.sh
 case $display in
 1)
-sudo pacman -Sy --noconfirm --needed - < persist-arch/_pulseaudio.txt
+sudo pacman -Sy --needed - < persist-arch/_pulseaudio.txt
 ;;
 2)
 yay -Sy --needed - < persist-arch/_pipewire.txt
