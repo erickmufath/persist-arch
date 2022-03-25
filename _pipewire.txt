@@ -1,5 +1,8 @@
+xorg-server
 xorg-xwayland
 xorg-xlsclients
+binutils
+usbutils
 qt5-wayland
 qt6-wayland
 glfw-wayland
