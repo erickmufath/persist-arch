@@ -5,12 +5,12 @@ wpa_supplicant
 linux-headers
 hwdetect
 plasma-desktop
-plasma-integration
 plasma-nm
+plasma-pa
+bluedevil
 dolphin
 konsole
 discover
-kdeplasma-addons
 kde-gtk-config
 powerdevil
 sddm
