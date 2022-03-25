@@ -47,10 +47,10 @@ sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 echo "usrname=$usrname" >> /persist-arch/install.conf
 cp -rf /persist-arch /home/"${usrname}"
 
-/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --noconfirm --needed - < persist-arch/_user.txt
-/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --noconfirm --needed - < persist-arch/_user.txt
-/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --noconfirm --needed - < persist-arch/_user.txt
-/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --noconfirm --needed - < persist-arch/_user.txt
+/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --needed - < persist-arch/_user.txt
+/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --needed - < persist-arch/_user.txt
+/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --needed - < persist-arch/_user.txt
+/usr/bin/runuser -u ${usrname} -- sudo pacman -Sy --needed - < persist-arch/_user.txt
 
 /usr/bin/runuser -u ${usrname} -- flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo 32 > /sys/block/${drive}/queue/iosched/fifo_batch
