@@ -12,6 +12,7 @@ kdeplasma-addons
 kde-gtk-config
 powerdevil
 sddm
+gamemode
 bluez
 bluez-utils
 flatpak
