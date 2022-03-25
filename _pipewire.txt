@@ -3,6 +3,8 @@ xorg-xwayland
 xorg-xlsclients
 binutils
 usbutils
+kwayland-integration
+layer-shell-qt
 qt5-wayland
 qt6-wayland
 glfw-wayland
