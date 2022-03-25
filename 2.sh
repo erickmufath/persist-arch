@@ -57,7 +57,7 @@ echo 32 > /sys/block/${drive}/queue/iosched/fifo_batch
 systemctl enable --now NetworkManager
 
 # Add DNS cloudflare
-sed -i 's/^nameserver 192.168.1.1/#nameserver 192.168.1.1/' /etc/resolv.conf
+sed -i 's/^nameserver/#nameserver/' /etc/resolv.conf
 echo "nameserver 1.1.1.1" >> /etc/resolv.conf
 echo "nameserver 1.0.0.1" >> /etc/resolv.conf
 
