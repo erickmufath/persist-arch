@@ -17,6 +17,7 @@ sudo systemctl enable zramd
 sudo systemctl enable auto-cpufreq
 sudo systemctl enable cups
 sudo systemctl enable ntpd
+sudo systemctl enable snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 sudo systemctl enable preload
 sudo systemctl enable bluetooth
