@@ -63,6 +63,7 @@ ttf-opensans
 ttf-proggy-clean
 firefox
 opera
+opera-ffmpeg-codecs
 adapta-gtk-theme
 materia-gtk-theme
 neofetch
