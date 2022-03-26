@@ -24,6 +24,7 @@ cups
 xdg-utils
 xdg-user-dirs
 exfatprogs
+p7zip
 unzip
 unrar
 libarchive
