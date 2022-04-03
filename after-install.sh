@@ -1,4 +1,10 @@
 source /persist-arch/install.conf
+#/usr/bin/runuser -u ${usrname} -- 
+sudo pacman -Sy --needed - < persist-arch/_user.txt
+sudo pacman -Sy --needed - < persist-arch/_user.txt
+sudo pacman -Sy --needed - < persist-arch/_user.txt
+sudo pacman -Sy --needed - < persist-arch/_user.txt
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ./persist-arch/yay.sh
 case $display in
 1)
