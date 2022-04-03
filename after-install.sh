@@ -14,7 +14,7 @@ sudo pacman -Sy --needed - < persist-arch/_pulseaudio.txt
 yay -Sy --needed - < persist-arch/_pipewire.txt
 ;;
 esac
-yay -S --needed - < /persist-arch/_aur.txt
+yay -S --needed - < persist-arch/_aur.txt
 sudo systemctl enable ananicy
 sudo systemctl enable irqbalance
 sudo systemctl enable nohang-desktop
