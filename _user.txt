@@ -1,6 +1,12 @@
+base-devel
+sof-firmware
 networkmanager
 network-manager-applet
 youtube-dl
+dialog
+reflector
+inetutils
+dnsutils
 wpa_supplicant
 linux-headers
 hwdetect
