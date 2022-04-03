@@ -1,4 +1,5 @@
 base-devel
+linux-firmware-qlogic
 sof-firmware
 networkmanager
 network-manager-applet
