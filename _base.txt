@@ -1,8 +1,6 @@
 base
-base-devel
 linux
 linux-firmware
-linux-firmware-qlogic
 git
 nano
 sudo
