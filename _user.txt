@@ -10,9 +10,7 @@ dnsutils
 wpa_supplicant
 linux-headers
 hwdetect
-plasma-desktop
-plasma-nm
-plasma-pa
+plasma
 kscreen
 bluedevil
 dolphin
