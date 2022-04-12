@@ -1,6 +1,3 @@
-xorg-server
-xorg-xwayland
-xorg-xlsclients
 pipewire
 pipewire-alsa
 pipewire-pulse
