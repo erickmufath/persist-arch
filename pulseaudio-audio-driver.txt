@@ -1,8 +1,0 @@
-pulseaudio
-pulseaudio-alsa
-pulseaudio-bluetooth
-pulseaudio-equalizer
-pulseaudio-jack
-pulseaudio-lirc
-pulseaudio-zeroconf
-pulsemixer
