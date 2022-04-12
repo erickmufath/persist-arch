@@ -1,0 +1,7 @@
+intel-media-driver
+intel-media-sdk
+intel-ucode
+lib32-vulkan-intel
+libva-intel-driver
+vulkan-intel
+xf86-video-intel
