@@ -1,4 +1,3 @@
-xorg
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
