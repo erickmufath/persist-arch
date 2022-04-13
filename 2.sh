@@ -49,6 +49,7 @@ cp -rf /persist-arch /home/"${usrname}"
 
 echo 32 > /sys/block/${drive}/queue/iosched/fifo_batch
 systemctl enable --now NetworkManager
+systemctl enable --now sddm
 
 # Add DNS cloudflare
 sed -i 's/^nameserver/#nameserver/' /etc/resolv.conf
