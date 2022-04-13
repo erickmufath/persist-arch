@@ -6,3 +6,5 @@ git
 nano
 sudo
 archlinux-keyring
+plasma
+sddm
